@@ -16,8 +16,9 @@ body {
   background: #5a1e76;
   width: 1400px;
   height: 840px;
-  margin: auto;
   border-radius: 50px;
+  margin: auto;
+  margin-top: 110px;
 }
 .play-card {
   background: #2b0040;
