@@ -1,17 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background: #43115b;
   font-family: "Fredoka", sans-serif;
 }
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container {
   background: #5a1e76;
   width: 1400px;
@@ -20,20 +24,22 @@ body {
   margin: auto;
   margin-top: 110px;
 }
+
 .play-card {
   background: #2b0040;
   width: 400px;
   height: 610px;
   border-radius: 20px;
-  padding: 90px 70px 90px 70px;
+  padding: 90px 70px;
 }
+
 .score {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin-bottom: 30px;
-  padding-bottom: 0px;
 }
+
 .box {
   width: 70px;
   height: 70px;
@@ -43,10 +49,12 @@ body {
   font-weight: 600;
   text-align: center;
 }
+
 .box span {
   display: block;
   font-size: 25px;
 }
+
 .x {
   background: #48d2fe;
 }
@@ -56,6 +64,14 @@ body {
 .o {
   background: #e2be00;
 }
+
+.cell.x {
+  color: #48d2fe;
+}
+.cell.o {
+  color: #e2be00;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 70px);
@@ -63,20 +79,21 @@ body {
   justify-content: center;
   margin-bottom: 30px;
 }
+
 .cell {
   width: 70px;
   height: 70px;
-  background: #43115B;
+  background: #43115b;
   border-radius: 10px;
   cursor: pointer;
   font-size: 45px;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
-.newgame{
+
+.newgame {
   border: none;
-  background: white;
   border-radius: 5px;
   cursor: pointer;
   width: 230px;
@@ -84,5 +101,17 @@ body {
   font-family: "Fredoka", sans-serif;
   font-weight: 800;
   font-size: 20px;
-  margin: 0 15px 0 15px;
+  margin: 0 15px;
+}
+
+.newgame.x {
+  background: #48d2fe;
+}
+
+.newgame.o {
+  background: #e2be00;
+}
+
+.newgame.default {
+  background: white;
 }
